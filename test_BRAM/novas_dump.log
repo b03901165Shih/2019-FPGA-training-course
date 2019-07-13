@@ -1,0 +1,133 @@
+ncsim 15.20-s039
+Linux 3.10.0-957.1.3.el7.x86_64 #1 SMP Thu Nov 29 14:49:43 UTC 2018 x86_64
+CPU cores: 24
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8192 kbytes
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked	64 kbytes
+maxproc			4096
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+USER=r07017
+LOGNAME=r07017
+HOME=/home/r07017
+PATH=/usr/cad/cadence/INNOVUS/cur/tools/celtic/bin:/usr/cad/cadence/INNOVUS/cur/tools/plato/bin:/usr/cad/cadence/INNOVUS/cur/tools/dfII/bin:/usr/cad/cadence/INNOVUS/cur/tools/bin:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/bin:/usr/cad/synopsys/verdi/cur/bin:/usr/cad/synopsys/verdi/cur/nLint/bin:/usr/cad/synopsys/formality/cur/bin:/usr/cad/synopsys/tmax/cur/bin:/usr/bin/X11:/usr/cad/synopsys/primetime/cur/amd64/syn/bin:/usr/bin/X11:/usr/cad/synopsys/coreConsultant/cur/bin:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/synopsys/lc/cur/bin:/usr/cad/cadence/IC/cur/tools/dfII/bin:/usr/cad/cadence/IC/cur/tools/dracula/bin:/usr/cad/cadence/IC/cur/tools/bin:/usr/cad/cadence/EDI/cur/tools/celtic/bin:/usr/cad/cadence/EDI/cur/tools/plato/bin:/usr/cad/cadence/EDI/cur/tools/dfII/bin:/usr/cad/cadence/EDI/cur/tools/fe/bin:/usr/cad/cadence/EDI/cur/tools/cdsdoc/bin:/usr/cad/cadence/EDI/cur/tools/bin:/usr/cad/cadence/EDI/cur//tools/tlfUtil/bin:/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+MAIL=/var/spool/mail/r07017
+SHELL=/bin/csh
+SSH_CLIENT=118.167.159.161 56134 22
+SSH_CONNECTION=118.167.159.161 56134 192.168.0.114 22
+SSH_TTY=/dev/pts/5
+TERM=xterm
+DISPLAY=localhost:11.0
+XDG_SESSION_ID=23581
+XDG_RUNTIME_DIR=/run/user/1000038
+HOSTTYPE=x86_64-linux
+VENDOR=unknown
+OSTYPE=linux
+MACHTYPE=x86_64
+SHLVL=1
+PWD=/home/r07017/FPGA_training_2019_summer/2019-FPGA-training-course/test_BRAM
+GROUP=users
+HOST=wolverine
+REMOTEHOST=118-167-159-161.dynamic-ip.hinet.net
+HOSTNAME=wolverine
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+KDEDIRS=/usr
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+LANG=en_US.UTF-8
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+QT_GRAPHICSSYSTEM_CHECKED=1
+LD_LIBRARY_PATH=:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/lib:/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/:/usr/cad/cadence/IC/cur/tools/lib:/usr/cad/cadence/EDI/cur//tools/tlfUtil/lib:/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib:/usr/openwin/lib:/usr/dt/lib:/usr/lib:/usr/local/lib
+LM_LICENSE_FILE=26585@lsntu:5280@lscic:5280@lscic:5280@lsnctu:
+ENCOUNTER=/usr/cad/cadence/INNOVUS/cur/tools/fe
+OA_HOME=/usr/cad/cadence/INNOVUS/cur/oa
+CDS_Netlisting_Mode=Analog
+SYNTHESIS=/usr/cad/synopsys/synthesis/cur
+SYN_MAN_DIR=/usr/cad/synopsys/synthesis/cur/doc/syn/man
+MANPATH=/usr/cad/synopsys/synthesis/cur/doc/syn/man
+PRIMETIME=/usr/cad/synopsys/primetime/cur
+SYNOPSYS_TMAX=/usr/cad/synopsys/tmax/cur
+FORMALITY=/usr/cad/synopsys/formality/cur
+SHLIB_PATH=/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX
+_IRUNROOT_=/usr/cad/cadence/INCISIV/cur/tools
+CDS_ARCH=lnx86
+NCRUNMODE=ncverilog:./INCA_libs/irun.lnx86.15.20.nc
+IRUNBATCH=FALSE
+IMPERAS_PORT_FILE=.vsp_ovp_gdb_port
+TCL_LIBRARY=/usr/cad/cadence/INCISIV/cur/tools/inca/files/tcl/library
+Runtime command line arguments:
+argv[0]=ncverilog
+argv[1]=tb_bram.v
+argv[2]=bram_wrapper.v
+argv[3]=+access+r
+71 profile - 100
+          CPU/Mem usage: 0.070 sys,  0.050 user,  61.58M sys,  0.00M vm
+72 VC callback profile - scalar:0 vector:0
+73 Sat Jul 13 21:36:51 2019
+74 pliAppInit
+75 FSDB_GATE is disabled.
+76 Enable Parallel Dumping.
+77 pliAppMiscSet: New Sim Round
+78 pliEntryInit
+79 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
+80 argv[0]: bram_wrapper.fsdb
+81 argv[0]: 0
+82 argv[1]: (handle)0xabcabf0 tb_bram.dut
+83 argv[2]: +mda
+84 FSDB Dumper for IUS, Release Verdi_O-2018.09, Linux, 08/30/2018
+85 (C) 1996 - 2018 by Synopsys, Inc.
+86 sps_call_fsdbDumpfile at 0 : /home/r07017/FPGA_training_2019_summer/2019-FPGA-training-course/test_BRAM/tb_bram.v(55)
+87 argv[0]: bram_wrapper.fsdb
+88 *Verdi* : Create FSDB file 'bram_wrapper.fsdb'
+89 sps_call_fsdbDumpvars at 0 : /home/r07017/FPGA_training_2019_summer/2019-FPGA-training-course/test_BRAM/tb_bram.v(56)
+90 argv[0]: 0
+91 argv[1]: (handle)0xabcabf0 tb_bram.dut
+92 argv[2]: +mda
+93 *Verdi* : Begin traversing the scope (tb_bram.dut), layer (0).
+94 *Verdi* : Enable +mda dumping.
+95 *Verdi* : End of traversing.
+96 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.080 sys,  0.150 user,  145.10M sys,  0.00M vm
+                   incr: 0.000 sys,  0.090 user,  4.67M sys,  0.00M vm
+                   accu: 0.000 sys,  0.090 user,  4.67M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.090 user,  4.67M sys,  0.00M vm
+
+          Count usage: 16411 var,  16410 idcode,  16411 callback
+                 incr: 16411 var,  16410 idcode,  16411 callback
+                 accu: 16411 var,  16410 idcode,  16411 callback
+            accu incr: 16411 var,  16410 idcode,  16411 callback
+97 VC callback profile - scalar:0 vector:0
+98 Sat Jul 13 21:36:51 2019
+99 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.080 sys,  0.170 user,  147.13M sys,  0.00M vm
+                   incr: 0.000 sys,  0.020 user,  2.03M sys,  0.00M vm
+                   accu: 0.000 sys,  0.110 user,  6.70M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.020 user,  2.03M sys,  0.00M vm
+
+          Count usage: 16411 var,  16410 idcode,  16411 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 16411 var,  16410 idcode,  16411 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+100 VC callback profile - scalar:9 vector:16401
+101 Sat Jul 13 21:36:51 2019
+102 End of simulation at 8215600
+103 VC callback profile - scalar:29023 vector:45641
+104 Sat Jul 13 21:36:52 2019
+105 Begin FSDB profile info:
+106 FSDB Writer : bc1(29023) bcn(45641) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.048327) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+107 End FSDB profile info
+108 Parallel profile    -  Flush:3 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:0
+109                        ProduceTime:0.371006959 ConsumerTime:0.000000000 Buffer:64MB
+110 SimExit
+111 Sim process exit
