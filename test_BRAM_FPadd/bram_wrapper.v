@@ -136,7 +136,7 @@ module alu_add
 	output [31:0] 	data_out;
 	output 			out_en;
 	
-	//=======================TODO=======================//
+	//=============================TODO=============================//
 	// Input:
 	//   data_<a/b/c/d>: 32 bits floating point input
 	//   in_en:	         set to 1 if data_<a/b/c/d> is valid
@@ -146,7 +146,7 @@ module alu_add
 	//
 	// Note:
 	//   Use the provided add.v for 8 stages pipelined addition
-	//=================================================//
+	//==============================================================//
 	
 endmodule
 
