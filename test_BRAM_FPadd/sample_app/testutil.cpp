@@ -239,7 +239,6 @@ void ErrorStat(float* diff_vec, float* ref_vec, int size)
 	for(int i = 0 ; i < 6 ; i++){ stat_vec[i] = 0;}
 	float may_difference = 0;
 	float may_diff_vec, may_ref_vec;
-	int row, sys;
 	float may_percent_difference = 0;
 	float may_diff_per, may_ref_per;
 	for(int i = 0 ; i < size ; i++)
@@ -254,7 +253,6 @@ void ErrorStat(float* diff_vec, float* ref_vec, int size)
 			may_difference = abs(diff_vec[i]-ref_vec[i]);
 			may_diff_vec   = diff_vec[i];
 			may_ref_vec    = ref_vec[i];
-			row = i/512; sys = i%512;
 		}
 		if(may_percent_difference < abs(diff_vec[i]-ref_vec[i])/abs(ref_vec[i]))
 		{
@@ -282,7 +280,6 @@ void ErrorStat(float* diff_vec, float* ref_vec, int size)
 	cout<<"Difference more than 10%  = "<<stat_vec[5]<<"\t("<<((float)stat_vec[5]/size)*100<<"%)\n";
 	cout<<"========================================================\n";
 	cout<<"Maximum Difference        = "<<may_difference<<endl;
-	cout<<"(Row, Sys)                = ("<<row<<", "<<sys<<")"<<endl;
 	cout<<"Diff Vector               = "<<may_diff_vec<<endl;
 	cout<<"Ref  Vector               = "<<may_ref_vec<<endl;
 	cout<<"========================================================\n";
