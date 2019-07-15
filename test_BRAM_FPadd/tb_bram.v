@@ -63,7 +63,7 @@ module tb_bram;
         forever #(`CYCLE/2) clk = ~clk;
     end
 	
-	wire stop_all = (out_index==NUM_OF_PAT-1);
+	wire stop_all = (out_index==NUM_OF_PAT);
 	integer err_cnt, i, k, iters, last_valid;
 	
     initial begin

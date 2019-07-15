@@ -136,97 +136,20 @@ module alu_add
 	output [31:0] 	data_out;
 	output 			out_en;
 	
-	wire [31:0] data_ab, data_cd;
-	wire 		out_en_inter;
-	
-	//pipline stage = 8;FPU_add_sub
-	FPU_add_unit  #(PIP_NUM) fp_add_unit1(
-		.CLK(CLK),
-		.RST(RST),
-		.in_en(in_en),
-		.data_a(data_a),
-		.data_b(data_b),
-		.data_out(data_ab),
-		.out_en(out_en_inter)
-	);
-	
-	//pipline stage = 8;FPU_add_sub
-	FPU_add_unit  #(PIP_NUM) fp_add_unit2(
-		.CLK(CLK),
-		.RST(RST),
-		.in_en(in_en),
-		.data_a(data_c),
-		.data_b(data_d),
-		.data_out(data_cd),
-		.out_en()
-	);
-	
-	//pipline stage = 8;FPU_add_sub
-	FPU_add_unit  #(PIP_NUM) fp_add_unit3(
-		.CLK(CLK),
-		.RST(RST),
-		.in_en(out_en_inter),
-		.data_a(data_ab),
-		.data_b(data_cd),
-		.data_out(data_out),
-		.out_en(out_en)
-	);
+	//=======================TODO=======================//
+	// Input:
+	//   data_<a/b/c/d>: 32 bits floating point input
+	//   in_en:	         set to 1 if data_<a/b/c/d> is valid
+	// Output:
+	//   data_out:       data_a+data_b+data_c+data_d
+	//   out_en:         set to 1 when data_out is valid
+	//
+	// Note:
+	//   Use the provided add.v for 8 stages pipelined addition
+	//=================================================//
 	
 endmodule
 
-//===========================================================================//
-
-//==============================================================================//
-module FPU_add_unit
-#(parameter PIP_NUM = 8)
-(CLK, RST, in_en, data_a, data_b, data_out, out_en);
-
-	input 		 	CLK;
-	input 		 	RST;
-	input			in_en;
-	input  [31:0] 	data_a;
-	input  [31:0] 	data_b;
-	output [31:0] 	data_out;
-	output 			out_en;
-
-	reg buf_reg      [PIP_NUM-1:0];
-	reg buf_reg_nxt  [PIP_NUM-1:0];
-
-	integer i;
-
-	assign out_en = buf_reg[PIP_NUM-1];
-
-	always@(posedge CLK or posedge RST)begin
-		if(RST)begin
-			for(i=0;i<PIP_NUM;i=i+1)begin
-				buf_reg[i] <= 0;
-			end
-		end
-		else begin
-			for(i=0;i<PIP_NUM;i=i+1)begin
-				buf_reg[i] <= buf_reg_nxt[i];
-			end
-		end
-	end
-
-	always@(*)begin
-		buf_reg_nxt[0] = in_en;
-		for(i=0;i<PIP_NUM-1;i=i+1)begin
-			buf_reg_nxt[i+1] = buf_reg[i];
-		end
-	end
-
-	//pipline stage = 8;FPU_add_sub
-	FPU_add_sub  fp_add_unit(
-	.clock(CLK),
-	.dataa(data_a),
-	.datab(data_b),
-	.result(data_out)
-	);
-	
-endmodule
-
-//===========================================================================//
 //==============================================================================//
 
 // Quartus II Verilog Template
